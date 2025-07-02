@@ -10,13 +10,13 @@ export const MainLayout = ({ children }: { children: ReactNode }) => {
   const isDarkMode = useDarkMode()
 
   return (
-    <div className="flex flex-col min-h-screen">
+    <div className="flex min-h-screen flex-col items-center justify-center">
       <main
-        className={clsx('flex flex-col justify-center w-full max-w-[768px] p-4 mx-auto', {
+        className={clsx('mx-auto w-full max-w-[768px] p-4', {
           dark: isDarkMode,
         })}
       >
-        <div className="w-full">{children}</div>
+        {children}
       </main>
     </div>
   )

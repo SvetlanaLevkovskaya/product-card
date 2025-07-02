@@ -22,16 +22,16 @@ const ProductCardComponent = ({ id, title, image, category, price, currency, ori
   return (
     <Link
       href={`/product/${id}`}
-      className="flex flex-col justify-between p-4 gap-2.5 outline outline-1 outline-slate-200 border"
+      className="flex flex-col justify-between gap-2.5 border p-4 outline outline-1 outline-slate-200"
     >
       <p className="text-sm text-gray-500">{category}</p>
-      <h3 className="text-sm font-medium min-h-10">{displayedTitle}</h3>
+      <h3 className="min-h-10 text-sm font-medium">{displayedTitle}</h3>
 
       {origin && <p className="text-xs text-gray-400">Made in {origin}</p>}
 
       <ProductCardImage title={title} image={image} />
 
-      <p className="text-2xl font-black text-gray-900 text-right">{formattedPrice}</p>
+      <p className="self-end text-2xl font-black text-gray-900">{formattedPrice}</p>
     </Link>
   )
 }

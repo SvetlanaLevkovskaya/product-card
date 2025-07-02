@@ -1,7 +1,7 @@
 export default async function ProductPage() {
   return (
-    <div className="max-w-xl mx-auto p-4">
-      <h1 className="text-2xl font-bold mb-4">Product Page</h1>
+    <div className="mx-auto max-w-xl p-4">
+      <h1 className="mb-4 text-2xl font-bold">Product Page</h1>
     </div>
   )
 }
