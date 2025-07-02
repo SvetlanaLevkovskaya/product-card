@@ -1,5 +1,5 @@
 import { ProductCard } from '@/app/(home)/ProductCard/ProductCard'
-import { mockProducts } from '@/app/(home)/constatns/products'
+import { mockProducts } from '@/app/(home)/constants/products'
 
 export default async function Home() {
   return (

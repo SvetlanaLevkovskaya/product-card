@@ -1,9 +1,16 @@
 @import 'tailwindcss';
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-  --scrollbar-thumb-bg: #a1a1aa;
-  --scrollbar-track-bg: #e4e4e7;
+@theme {
+  --color-gray-900: #121212;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-gray-900: #e5e7eb;
+  }
+
+  body {
+    background-color: #121212 !important;
+    color: #e5e7eb !important;
+  }
 }
